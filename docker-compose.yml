@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  eth-block-api-service:
+    build:
+      context: .
+      dockerfile: eth-block-api-service.dockerfile
+    restart: always
+    ports:
+      - "80:80"
+

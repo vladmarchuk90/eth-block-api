@@ -13,7 +13,7 @@ One api endpoint is realized it's **/api/block/{blockNumber}/total**, where {blo
 Http api response is in json format and has the next structure {"transactions":**NumberOfTransactionsInBlock**,"amount":**TotalAmountOfAllTransactions**}. For example for block 14797288 you get the next response {"transactions":160,"amount":10.49336032072198}.
 
 ## Installation and running
-Clone the repository locally https://github.com/vladmarchuk90/eth-block-api.git after that you can run service by command _go run cmd/web/*.go_ or previously build it by command _go build cmd/web/*.go_ and after run _./main_ (if you built with default name).
+Clone the repository locally https://github.com/vladmarchuk90/eth-block-api.git after that you can run service by command _go run cmd/web/*.go_ or previously build it by command _go build cmd/web/*.go_ and after run _./main_ (if you built with default name). As well, you can build and run docker image by command **docker-compose up -d** (be sure you are in the project folder before running this comand).
 
 ## Application settings
 You can provide some settings (see config.json). File config json should be in project root folder if you use run command or together in one folder with executable if you previously built it.
